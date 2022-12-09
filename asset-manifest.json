@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/santa-list/static/css/main.c95d1ca5.css",
+    "main.js": "/santa-list/static/js/main.46595d79.js",
+    "static/js/787.300de278.chunk.js": "/santa-list/static/js/787.300de278.chunk.js",
+    "index.html": "/santa-list/index.html",
+    "main.c95d1ca5.css.map": "/santa-list/static/css/main.c95d1ca5.css.map",
+    "main.46595d79.js.map": "/santa-list/static/js/main.46595d79.js.map",
+    "787.300de278.chunk.js.map": "/santa-list/static/js/787.300de278.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.c95d1ca5.css",
+    "static/js/main.46595d79.js"
+  ]
+}
