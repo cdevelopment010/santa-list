@@ -1,0 +1,87 @@
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@500&family=Indie+Flower&display=swap');
+
+
+* {
+    margin: 0; 
+    padding: 0; 
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+
+}
+
+
+html {
+    font-size: 16px;
+    font-family: 'Indie Flower', cursive;
+}
+
+body {
+    overflow: hidden;
+}
+
+h1 {
+    font-family: 'Dancing Script', cursive;
+    text-align: center;
+    margin-top: 1rem;
+}
+
+.container {
+    display: flex; 
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    min-width: 100vw; 
+    overflow-y: hidden;
+    /* background-image: url('https://raw.githubusercontent.com/cdevelopment010/christmas-cards-2022/main/public/images/mohamed-hassan.jpg'); */
+    /* background-size: contain; */
+    background: #040b30;
+}
+
+.notepad {
+    z-index: 2;
+    min-height: 50vh;
+    min-width: 50vw;
+    overflow-y: scroll;
+    background: repeating-linear-gradient(to right, transparent 2rem, red 2.1rem , transparent 2.3rem, transparent), 
+    repeating-linear-gradient(#84aaf0 0, white 1px, white 1.5rem)
+    ;
+    box-shadow: 8px 8px 8px 0 rgba(0,0,0,0.5);
+}
+
+ul,li {
+    margin-left: 1rem;
+}
+
+ul {
+    margin-top: 1.5rem;
+}
+
+li {
+    padding-left: 1rem;
+    list-style-type:none;
+    position: relative;
+}
+
+li::before {
+    content: '\2B50'; 
+    position: absolute;
+    left: -1.5rem;
+    height: 24px;
+}
+
+
+.snow {
+    z-index: 1;
+    position: absolute;
+    height: 5px; 
+    width: 5px;
+    background: white; 
+    border-radius: 50%;
+	animation: snowfall linear forwards;
+}
+
+@keyframes snowfall {
+    to {
+        transform: translateY(101vh);
+    }
+}

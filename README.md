@@ -1,6 +1,15 @@
-# Getting Started with Create React App
+#  Santa List
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+
+## Code challenge
+
+This is the second of the 2022 Christmas code challenges. The idea is that you build something related to Santa, with the caveat that you can't build something similar to week 1. 
+
+My idea is to build an interactive christmas wish list that you can send to Santa. 
+
+
+
 
 ## Available Scripts
 

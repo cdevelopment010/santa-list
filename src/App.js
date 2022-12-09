@@ -1,23 +1,42 @@
-import logo from './logo.svg';
-import './App.css';
+import './Styles/index.css'; 
+import './Styles/santa.css'; 
+
+
+import Notepad from './Components/Notepad';
+import Santa from './Components/Santa';
+import { useEffect } from 'react';
+
+  
+
 
 function App() {
+
+
+  useEffect(() => {
+    let snowfall = setInterval(() => {
+      generateSnow();
+    }, 60)
+
+    return () => { clearInterval(snowfall)}
+  })
+
+  const generateSnow = () => {
+    let snow = document.createElement("span");
+    snow.classList.add('snow');
+    snow.style.animationDuration = '3s';
+    snow.style.left =  window.innerWidth * Math.random() + 'px';
+    snow.style.top = '30px'; 
+
+    document.body.appendChild(snow)
+    setTimeout(() => {
+      snow.remove();
+    }, 5000);
+  }
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className="container">
+      <Notepad />
+      <Santa />
     </div>
   );
 }
